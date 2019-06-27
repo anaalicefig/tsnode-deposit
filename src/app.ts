@@ -21,7 +21,7 @@ class App {
     }
 
     private database(): void {
-        mongoose.connect('mongodb://localhost:27017/tsnode', {
+        mongoose.connect(`mongodb://${process.env.DB_HOST}:27017/${process.env.DB_NAME}`, {
             useNewUrlParser: true
         })
     }
