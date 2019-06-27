@@ -1,5 +1,10 @@
 # tsnode-deposit
+
 Base project to be used in projects using TypeScript with NodeJS
 
-## what we have
-- user crud
+  - Typescript
+  - Node.js
+  - MongoDB
+
+### what we have
+  - user crud
