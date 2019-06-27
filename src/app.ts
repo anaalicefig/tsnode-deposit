@@ -9,7 +9,6 @@ class App {
 
     public constructor() {
         this.express = express()
-
         this.middlewares()
         this.database()
         this.routes()
@@ -21,7 +20,7 @@ class App {
     }
 
     private database(): void {
-        mongoose.connect(`mongodb://${process.env.DB_HOST}:27017/${process.env.DB_NAME}`, {
+        mongoose.connect(`mongodb://localhost:27017/tsnode`, {
             useNewUrlParser: true
         })
     }

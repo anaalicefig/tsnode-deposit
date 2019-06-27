@@ -30,7 +30,7 @@ class UserController {
     public async destroy(req: Request, res: Response) {
         await User.findByIdAndRemove(req.params.id, req.body)
 
-        return res.status(200)
+        return res.status(200).send('Sucess')
     }
 }
 
